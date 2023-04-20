@@ -1,0 +1,17 @@
+body{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+.Hero{
+    transform: translate(40%, 40vh);
+    /* width: 30%;
+    height: 30vh;
+    background: rebeccapurple; */
+}
+.Hero div{
+    margin: 0.5rem;
+}
+.Hero input{
+    width: 20%;
+    /* height: 10%; */
+    font-size: 20px;
+}

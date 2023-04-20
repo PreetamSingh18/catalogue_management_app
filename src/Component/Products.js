@@ -19,7 +19,6 @@ const Products = (props) => {
 
   useEffect(() => {
     dispatch(fetchProducts(maxItems));
-//    dispatch(getTotal());
    
   }, []);
 
