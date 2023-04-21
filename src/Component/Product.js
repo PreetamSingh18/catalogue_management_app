@@ -58,11 +58,11 @@ const Product = (props) => {
             ? product.description.substr(0, 150) + "..."
             : product.description}
         </p>
-        <button>
           <Link to={`/product/${product.id}`} key={product.id}>
-            Read More{" "}
-          </Link>
+        <button className="btn">
+            Read More
         </button>
+          </Link>
       </div>
     </div>
   );

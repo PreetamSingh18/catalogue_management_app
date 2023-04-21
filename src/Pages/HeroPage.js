@@ -4,6 +4,8 @@ import HomePage from "./HomePage";
 import { useNavigate } from 'react-router-dom';
 import "../CSS/Heropage.css"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight,  } from "@fortawesome/free-solid-svg-icons";
 
 const HeroPage = () => {
     const navigate = useNavigate();
@@ -65,10 +67,10 @@ const [userData,setUserData]=useState({
          
         />
       </div>
-       <input type="submit" value="Proceed" onClick={handleSubmit}  required=""/>
-      {/* <div>
-        <button onClick={handleSubmit}>Proceed</button>
-      </div> */}
+       {/* <input type="submit" value="Proceed" onClick={handleSubmit}  required=""/> */}
+      <div>
+        <button onClick={handleSubmit}>Proceed <FontAwesomeIcon icon={faArrowRight} /></button>
+      </div>
     </form>
     </div>
   );

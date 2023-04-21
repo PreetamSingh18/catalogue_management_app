@@ -15,3 +15,17 @@ body{
     /* height: 10%; */
     font-size: 20px;
 }
+.Hero button{
+    width: 20%;
+    /* height: 10%; */
+    font-size: 20px;
+    border: none;
+  outline: none;
+  background: #764abc;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
