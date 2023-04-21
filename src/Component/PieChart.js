@@ -38,9 +38,19 @@ for (const { category } of products) {
  console.log(Name);
  console.log(Quantity);
 
-  
+ let flag=0;
   const [popup,setPopUp]=useState(false);
   const handlePopup =()=>{
+    flag=1;
+    if(popup==false && flag==1){
+    document.body.style.overflowY="hidden";
+    // document.body.style.opacity="0.2";
+    // document.getElementsByClassName("Full-Box").style.opacity="1";
+    }
+    else{
+      document.body.style.overflowY="";
+      // document.body.style.opacity="";
+    }
     setPopUp(!popup);
   }
   const data = {
@@ -75,7 +85,7 @@ for (const { category } of products) {
 
   return (
 
-    <div>
+    <div className="Full-Box" >
       <div className="btn-Analyze">
         <button className="Analyze" onClick={handlePopup}>Analyze</button>
       </div>

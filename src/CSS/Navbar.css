@@ -1,46 +1,56 @@
 .NavBox {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Lato", sans-serif;
-    font-size: 25px;
-    background: #cbabff;
-    /* background: white; */
-    /* color: white; */
-    box-shadow: 1px 10px 100px 4px rgba(132, 132, 132, 0.4);
-  }
-  .mobile-Navbar {
-    display: none;
-  }
-  .mobile-Navbar .close-outline {
-    display: none;
-  }
-  
-  .logo {
-    margin: 0.5rem;
-    margin-left: 2rem;
-    letter-spacing: 1.1px;
-    /* height: 50px; */
-    color: rgb(255, 205, 39);
-    z-index: 9999;
-    font-family: "Alkatra", cursive;
-  }
-  
-  .cartCount {
-    font-weight: 550;
-    font-size: 15px;
-    vertical-align: top;
-    margin-right: 3rem;
-    color: #2616ff;
-  }
-  .navLink {
-    text-decoration: none;
-    color: black;
-    margin-left: 20px;
-    letter-spacing: 1.15px;
-  }
-  .navLink:hover{
-    color: rgb(84, 84, 84);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  background: #cbabff;
+  /* background: white; */
+  /* color: white; */
+  box-shadow: 1px 10px 100px 4px rgba(132, 132, 132, 0.4);
+}
+.mobile-Navbar {
+  display: none;
+}
+.mobile-Navbar .close-outline {
+  display: none;
+}
+
+.logo {
+  margin: 0.5rem;
+  margin-left: 2rem;
+  letter-spacing: 1.1px;
+  /* height: 50px; */
+  color: rgb(255, 205, 39);
+  z-index: 99;
+  font-family: "Alkatra", cursive;
+}
+
+.NavItems {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.Details {
+  margin-left: 2rem;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.Drop-Box {
+  margin-right: 2rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  letter-spacing: 1.15px;
+}
+.navLink:hover {
+  color: rgb(84, 84, 84);
   box-shadow: #053c7d;
-  }
+}
