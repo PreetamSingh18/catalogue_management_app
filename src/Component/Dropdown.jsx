@@ -15,16 +15,18 @@ const Dropdown = () => {
   useEffect(()=>{
     dispatch(fetchCategories());
   },[]);
-console.log(categories)
+// console.log(categories)
   return (
     <div className='dropdown'>
         <div className='dropdown-btn' onClick={(e)=>setIsActive(!isActive)}>Categories <FontAwesomeIcon icon={faAngleDown} /></div>
         {
             isActive && (<div className='dropdown-content'>
         { categories && categories.map((category, idx) => (
+          <Link to={`category/${category}`} >
             <div key={idx} className="dropdown-item" onClick={(e)=>setIsActive(false)}>
-              <Link to={`category/${category}`}>{category}</Link>
+              {category}
             </div>
+            </Link>
           ))}
         </div>
 

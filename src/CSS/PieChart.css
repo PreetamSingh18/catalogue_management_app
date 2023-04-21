@@ -1,0 +1,47 @@
+.btn-Analyze{
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+}
+.Analyze {
+    font-size: 20px;
+    border: 1px solid black;
+    background: rgb(44, 44, 255);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.popup{
+   z-index: 10000000;
+   width: 60%;
+      height: 60vh;
+      background: rgb(255, 255, 255); 
+    position: fixed;
+    top: 20%;
+    right: 20%;
+    /* display: flex; */
+    
+}
+.popup-cont{
+    display: flex;
+    justify-content: flex-end
+}
+.close-btn1{
+    align-items: flex-end;
+    cursor: pointer;
+    background: rgb(201, 144, 255);
+    /* padding: 5px; */
+    font-size: 20px;
+    border-radius: 50%;
+}
+.chart-box{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.chart{
+    width: 400px;
+    height: 400px;
+}
